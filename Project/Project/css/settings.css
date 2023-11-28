@@ -1,0 +1,111 @@
+/* settings.css */
+body.light, html.light body {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark, html.dark body {
+    background-color: #333;
+    color: #fff;
+}
+
+.main-content {
+    background-color: #ffffff; /* Light theme background color */
+    color: #333; /* Light theme text color */
+    /* ... other .main-content styles ... */
+}
+
+/* Dark theme styles */
+body.dark .main-content {
+    background-color: #3d3b3b; /* Dark theme background color */
+    color: #fff; /* Dark theme text color */
+    /* Additional styles for dark mode if needed */
+}
+
+/* Ensure form elements inside .main-content are styled for dark theme */
+body.dark .main-content input,
+body.dark .main-content select,
+body.dark .main-content button,
+body.dark .main-content textarea {
+    background-color: #555; /* Dark theme form background color */
+    color: #ddd; /* Dark theme form text color */
+    border: 1px solid #666; /* Dark theme form border color */
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.alert.success { background-color: #4CAF50; }
+.alert.error { background-color: #f44336; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: rgb(0, 60, 255);
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the toggle switches */
+.toggle-switch {
+    /* Style your select element as a toggle switch, or use actual checkboxes if preferred */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-blue {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Make the button block level to occupy its own line */
+    width: 100%; /* Stretch the button to full container width */
+    margin-top: 15px; /* Add some margin to the top */
+}
+
+.btn-blue:hover {
+    background-color: darkblue;
+}
+
+/* Add additional styles as needed */

@@ -1,0 +1,180 @@
+/* Style for the header */
+body.light, html.light body {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark, html.dark body {
+    background-color: #333;
+    color: #fff;
+}
+th.dark, html.dark th {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+}
+tr:nth-child(odd).dark, html.dark tr:nth-child(odd) {
+    background-color: #8d8d8d;
+}
+td.dark, html.dark td {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+}
+.no-shift.dark, html.dark .no-shift {
+    /* Styles for cells without shifts */
+    color: #0001ff;
+    background-color: #f2f2f2;
+}
+.shift.dark, html.dark .shift {
+    /* Styles for cells with shifts */
+    background-color: #9bf277; /* Light green */
+    color: black
+}
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+/* Style for the main content */
+.main-content {
+    margin: 20px;
+}
+
+/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style for table headers */
+th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Style for table cells */
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Style for odd rows (alternating row colors) */
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.shift {
+    /* Styles for cells with shifts */
+    background-color: #48ff00; /* Light green */
+    color: rgb(0, 0, 0); 
+}
+.no-shift {
+    /* Styles for cells without shifts */
+    color: #999;
+    background-color: #f2f2f2;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Highlighting availability */
+.available {
+    background-color: #d4edda; /* light green */
+    color: #155724;
+}
+
+.unavailable {
+    background-color: #f8d7da; /* light red */
+    color: #721c24;
+}
+
+.no-shift {
+    background-color: #f0f0f0; /* light grey */
+}
+
+/* Hover effect for editable cells */
+td[contenteditable="true"]:hover {
+    background-color: #525455; /* light blue */
+    cursor: text;
+}
+
+/* Style for the header */
+.header ul.menu {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.header ul.menu li {
+    float: left;
+}
+
+.header ul.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header ul.menu li a:hover {
+    background-color: #111;
+}
+
+
+/* Style for the form container */
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the textarea */
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allows the user to vertically resize the textarea */
+}
+
+/* Style for the submit button */
+.form-container input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
